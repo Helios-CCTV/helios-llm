@@ -159,7 +159,7 @@ Return only the JSON object above, computed strictly by these rules.
     try:
         return json.loads(text)
     except Exception:
-        # 혹시 모델이 JSON 형식 위반 시(드물지만) 원문을 함께 보여줍니다.
+        # JSON 형식 위반 시
         return {"_parse_error": True, "_raw": text}
 
 def save_json(obj: dict, path: str) -> None:
@@ -169,13 +169,13 @@ def save_json(obj: dict, path: str) -> None:
 
 if __name__ == "__main__":
     # 이미지 URL
-    image_url = f"{IMG_BASE_URL}2025-09-13/7994_20250913.jpg"
+    image_url = f"{IMG_BASE_URL}2025-09-13/7752_20250913.jpg"
 
 
     # analyze_id + result_json
     record = {
-      "analyze_id": 48602,
-      "result_json": "{\"cctv\": {\"id\": 7994, \"coordx\": 127.259211, \"coordy\": 35.148842, \"cctvname\": \"[호남선] 덕흥교\"}, \"detections\": [{\"id\": 8319, \"bbox\": [213, 281, 254, 355], \"damage_type\": \"세로방향균열\"}, {\"id\": 8320, \"bbox\": [161, 417, 184, 476], \"damage_type\": \"거북등\"}, {\"id\": 8321, \"bbox\": [393, 252, 405, 264], \"damage_type\": \"밀림균열\"}], \"analyzed_date\": \"2025-09-13\"}"
+      "analyze_id": 47633,
+      "result_json": "{\"cctv\": {\"id\": 7752, \"coordx\": 127.051682, \"coordy\": 36.198040, \"cctvname\": \"[천안논산선] 화정2교 ↑\"}, \"detections\": [{\"id\": 8070, \"bbox\": [343, 363, 373, 429], \"damage_type\": \"세로방향균열\"}, {\"id\": 8071, \"bbox\": [308, 286, 328, 323], \"damage_type\": \"세로방향균열\"}, {\"id\": 8072, \"bbox\": [436, 290, 475, 324], \"damage_type\": \"세로방향균열\"}, {\"id\": 8073, \"bbox\": [375, 256, 414, 268], \"damage_type\": \"반사균열\"}, {\"id\": 8074, \"bbox\": [376, 256, 415, 268], \"damage_type\": \"반사균열\"}, {\"id\": 8075, \"bbox\": [375, 256, 415, 268], \"damage_type\": \"반사균열\"}], \"analyzed_date\": \"2025-09-13\"}"
     }
 
     

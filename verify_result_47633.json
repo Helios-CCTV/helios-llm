@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "verified_count": 4,
+  "rejected_count": 2,
+  "per_box": [
+    {
+      "index": 0,
+      "label": "세로방향균열",
+      "bbox": [343, 363, 373, 429],
+      "area_percent": 0.5729,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.9549,
+      "r_box": 53.759,
+      "decision": "ACCEPT",
+      "reason": "차로 진행방향과 평행한 얇은 균열이 명확함"
+    },
+    {
+      "index": 1,
+      "label": "세로방향균열",
+      "bbox": [308, 286, 328, 323],
+      "area_percent": 0.2141,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.3569,
+      "r_box": 37.314,
+      "decision": "ACCEPT",
+      "reason": "세로로 이어진 미세 균열이 확인됨"
+    },
+    {
+      "index": 2,
+      "label": "세로방향균열",
+      "bbox": [436, 290, 475, 324],
+      "area_percent": 0.3837,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.6395,
+      "r_box": 45.085,
+      "decision": "ACCEPT",
+      "reason": "차로 방향의 가는 균열/패치 흔적이 포함됨"
+    },
+    {
+      "index": 3,
+      "label": "반사균열",
+      "bbox": [375, 256, 414, 268],
+      "area_percent": 0.1354,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.2257,
+      "r_box": 33.707,
+      "decision": "ACCEPT",
+      "reason": "차로를 가로지르는 얇은 횡방향 크랙으로 보임"
+    },
+    {
+      "index": 4,
+      "label": "반사균열",
+      "bbox": [376, 256, 415, 268],
+      "area_percent": 0.1354,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.2257,
+      "r_box": 33.707,
+      "decision": "REJECT",
+      "reason": "3번과 거의 동일한 위치의 중복 박스"
+    },
+    {
+      "index": 5,
+      "label": "반사균열",
+      "bbox": [375, 256, 415, 268],
+      "area_percent": 0.1389,
+      "w_type": 0.55,
+      "p0": 0.6,
+      "g": 0.2315,
+      "r_box": 33.866,
+      "decision": "REJECT",
+      "reason": "3번과 동일 영역 중복"
+    }
+  ],
+  "r_max": 53.759,
+  "r_avg": 39.573,
+  "count_boost": 15.567,
+  "r_frame": 63.652,
+  "risk_level": "MEDIUM",
+  "comments": "세로방향 균열과 소규모 반사균열이 다수 있으나 면적이 작음. 조기 크랙 실링과 정기 모니터링을 권장합니다."
+}
